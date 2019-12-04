@@ -15,7 +15,7 @@ pipeline {
 
         stage('tests') {
             steps {
-                sh 'python app.py'
+                sh 'python2.7 app.py'
             }
         }
     }
