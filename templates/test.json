@@ -1,0 +1,48 @@
+{
+    "version" : 10,
+    "index_patterns" : [
+      "test*"
+    ],
+    "settings" : {
+      "index" : {
+        "refresh_interval" : "30s",
+        "number_of_shards" : "6",
+        "number_of_replicas" : "2"
+      }
+    },
+    "mappings" : {
+      "_doc" : {
+        "properties" : {
+          "long" : {
+            "type" : "long"
+          },
+          "message" : {
+            "norms" : false,
+            "index" : true,
+            "type" : "text"
+          },
+          "integer" : {
+            "index" : true,
+            "type" : "integer"
+          },
+          "@timestamp" : {
+            "type" : "date",
+            "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'||epoch_millis"
+          },
+          "object" : {
+            "type" : "object",
+            "enabled" : false
+          },
+          "short" : {
+            "index" : true,
+            "type" : "short"
+          },
+          "float" : {
+            "index": true,
+            "type" : "float"
+          }
+        }
+      }
+    },
+    "aliases" : { }
+}

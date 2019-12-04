@@ -1,0 +1,9 @@
+{
+    "long" :  9223372036854775807,
+    "message" : "Thank you Sabuj, I have instal CURL and run the code, it create in 'data' folder a indexname. But anytime I need to insert data to ElasticSearch, I must use these tool like CURL, RESTClient... As my understand, ElasticSearch use webservice to contact with data, am I right? In the case I need to interact with Elastic using my application, how can I do it? Many thanks – user1162069",
+    "integer" : 214748364,
+    "@timestamp" : "2019-12-02T13:33:54.974Z",
+    "object" : {"testobj": {"bla": 1}},
+    "short" : 5,
+    "float" : 12.15
+}
